@@ -1,6 +1,6 @@
 # ES5 and ES6 Interview Questions and Answers
 
-A comprehensive list of frequently asked interview questions and answers about ES5 and ES6 JavaScript features.
+A comprehensive list of frequently asked interview questions and answers about ES5 and ES6 JavaScript features. Ideal for frontend developers preparing for interviews or reviewing core JavaScript concepts.
 
 ---
 
@@ -25,6 +25,7 @@ A comprehensive list of frequently asked interview questions and answers about E
 ---
 
 ### 1. What is the difference between var, let, and const?
+
 - **var**: Function-scoped or globally-scoped. Can be re-declared and updated.
 - **let**: Block-scoped. Cannot be re-declared within the same scope but can be updated.
 - **const**: Block-scoped. Cannot be re-declared or updated, but the contents of objects/arrays can be modified.
@@ -34,6 +35,7 @@ A comprehensive list of frequently asked interview questions and answers about E
 ---
 
 ### 2. How do ES6 arrow functions differ from ES5 functions?
+
 - Arrow functions provide a shorter syntax and lexically bind the `this` value, meaning they inherit `this` from the parent scope.
 
 [⬆️ Go to Top](#table-of-contents)
@@ -41,15 +43,11 @@ A comprehensive list of frequently asked interview questions and answers about E
 ---
 
 ### 3. What are template literals in ES6 and how do they work?
-- Template literals are enclosed by backticks (\`) and allow for embedded expressions using `${expression}`. They support multi-line strings and string interpolation.
 
-[⬆️ Go to Top](#table-of-contents)
+- Template literals are enclosed by backticks (\`) and allow for embedded expressions using `${expression}`.
+- They support multi-line strings and string interpolation.
 
----
-
-### 4. Explain destructuring assignment in ES6.
-- Destructuring assignment allows for extracting values from arrays or objects into distinct variables.  
-  Example:
-  ```javascript
-  const [a, b] = [1, 2];
-  const { name, age } = { name: "John", age: 25 };
+**Example:**
+```javascript
+const name = "John";
+console.log(`Hello, ${name}!`);
