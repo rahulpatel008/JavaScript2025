@@ -17,6 +17,7 @@ This document contains basic, intermediate, and advanced-level CSS interview que
 ### 🧠 Advanced Level
 5. [How can you create a CSS grid layout?](#5-how-can-you-create-a-css-grid-layout)
 6. [What are CSS preprocessors, and give examples?](#6-what-are-css-preprocessors-and-give-examples)
+7. [What is a Mixin?](#7-what-is-a-Mixin?)
 
 ---
 
@@ -109,6 +110,159 @@ CSS preprocessors are scripting languages that extend CSS and add features like 
 [🔝 Go to top](#-css-cascading-style-sheets-interview-questions-and-answers)
 
 ---
+
+---
+
+### 🔧 What is a Mixin?
+
+A **mixin** is like a function in CSS. It lets you write a set of CSS properties once and include it wherever needed.
+
+> ⚠️ **Note:** Mixins are **not supported in plain CSS**. You must use a preprocessor like **Sass** (`.scss` or `.sass` files).
+
+---
+
+## 📦 Basic Mixin
+
+```scss
+@mixin center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+```
+
+### ✅ Usage
+
+```scss
+.box {
+  @include center-content;
+  height: 200px;
+  background-color: lightblue;
+}
+```
+
+### 🧾 Output CSS
+
+```css
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color: lightblue;
+}
+```
+
+---
+
+## 📐 Mixin with Parameters
+
+```scss
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+```
+
+### ✅ Usage
+
+```scss
+.button {
+  @include border-radius(10px);
+}
+```
+
+### 🧾 Output CSS
+
+```css
+.button {
+  border-radius: 10px;
+}
+```
+
+---
+
+## ⚙️ Mixin with Default Values
+
+```scss
+@mixin font-style($size: 16px, $weight: normal) {
+  font-size: $size;
+  font-weight: $weight;
+}
+```
+
+### ✅ Usage
+
+```scss
+.title {
+  @include font-style(20px, bold);
+}
+
+.subtitle {
+  @include font-style(); // uses defaults
+}
+```
+
+---
+
+## 🧪 Real-World Use Case
+
+```scss
+@mixin button-style($bg-color, $text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.primary-button {
+  @include button-style(blue, white);
+}
+
+.danger-button {
+  @include button-style(red, white);
+}
+```
+
+---
+
+## ✅ Benefits of Mixins
+
+| Benefit           | Description                                              |
+|------------------|----------------------------------------------------------|
+| ♻️ Reusability     | Reuse common styles across multiple components.          |
+| 🧼 Clean Code      | Keep your codebase neat and modular.                     |
+| 🛠️ Customization   | Mixins can accept parameters for flexibility.            |
+| 🧩 Maintainability | Update style logic in one place instead of many.         |
+
+---
+
+## ❌ Not for Plain CSS
+
+Mixins **require** a preprocessor like:
+
+- [Sass (SCSS)](https://sass-lang.com/)
+- [Less](http://lesscss.org/)
+
+If you're using plain CSS and need reusable styles, consider:
+
+- **Tailwind CSS** with `@apply`
+- **CSS Custom Properties (Variables)**
+
+---
+
+## 🏁 Final Tip
+
+Use mixins to eliminate repetition and centralize styling logic. Especially useful for:
+
+- Responsive styles
+- Themes
+- Layout utilities
+- Buttons and typography
+
+---
+
 
 ## Below are few more 60 questions and answers for CSS
 ---
