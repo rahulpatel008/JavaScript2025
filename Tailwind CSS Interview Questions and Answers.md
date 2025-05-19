@@ -5,22 +5,6 @@ A complete, professional guide to mastering the most important utility classes i
 
 ---
 
-## 📑 Table of Contents
-
-1. [Introduction](#introduction)
-2. [Layout Utilities](#layout-utilities)
-3. [Flexbox and Grid](#flexbox-and-grid)
-4. [Spacing (Margin, Padding, Gap)](#spacing-margin-padding-gap)
-5. [Typography](#typography)
-6. [Backgrounds and Borders](#backgrounds-and-borders)
-7. [Sizing (Width, Height, Max/Min)](#sizing-width-height-maxmin)
-8. [Positioning](#positioning)
-9. [Visibility and Overflow](#visibility-and-overflow)
-10. [Responsive Design](#responsive-design)
-11. [Breakpoints Reference](#breakpoints-reference)
-
----
-
 ## 🧩 Introduction
 
 Tailwind CSS is a utility-first CSS framework that enables developers to rapidly build modern, responsive UIs with predefined classes. This guide focuses on the **most important utility categories**, helping you design flexible and scalable layouts efficiently.
