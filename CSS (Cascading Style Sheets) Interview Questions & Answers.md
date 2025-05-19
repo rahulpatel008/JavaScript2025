@@ -111,9 +111,8 @@ CSS preprocessors are scripting languages that extend CSS and add features like 
 
 ---
 
----
-
-### 🔧 What is a Mixin?
+### 7) What is a Mixin?
+**Answer:**  
 
 A **mixin** is like a function in CSS. It lets you write a set of CSS properties once and include it wherever needed.
 
@@ -262,6 +261,8 @@ Use mixins to eliminate repetition and centralize styling logic. Especially usef
 - Buttons and typography
 
 ---
+
+[🔝 Go to top](#-css-cascading-style-sheets-interview-questions-and-answers)
 
 
 ## Below are few more 60 questions and answers for CSS
