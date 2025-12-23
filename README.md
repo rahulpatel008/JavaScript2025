@@ -7,6 +7,6 @@ It's designed to help you prepare for technical interviews and deepen your under
 
 ## 📖 About
 
-This repo serves as a focused study guide for developers preparing for **front-end JavaScript interviews**.
+This repo serves as a focused study guide for developers preparing for **front-end JavaScript interviews questions and answers**.
 
 ---
